@@ -10,9 +10,15 @@ $primaryTextColor: #000000;
 $secondaryTextColor: #d1d2d4;
 
 body {
+  color: $secondaryColor;
   .page-wrapper{
     margin: 0;
   }
+
+  .text-center{
+    text-align: center;
+  }
+
   &.home header.top-header {
     position: absolute;
     width: 100%;
@@ -32,8 +38,30 @@ body {
         margin-left: 2.5rem;
         font-size: 1.81rem;
         font-family: "Sacramento";
+
+        &.black a {
+          color: $primaryTextColor;
+        }
       }
     }
+  }
+
+  main{
+    section{
+      padding: 6rem 0;
+
+      .quotation{
+        font-size: 4rem;
+        color: $primaryTextColor;
+        font-family: "Sacramento";
+      }
+
+      .person{
+        font-weight: 700;
+        color: $secondaryColor;
+      }
+    }
+
   }
 
   footer.container{
