@@ -111,6 +111,11 @@ body {
           font-weight: 400;
         }
       }
+
+      img.wed-logo {
+        margin: auto;
+        margin-top: 10vh;
+      }
     }
 
     .btn {
@@ -126,6 +131,7 @@ body {
 
       &:hover{
         text-decoration: none;
+        background: $primaryColor-2;
       }
     }
   }
@@ -133,6 +139,26 @@ body {
   footer.container {
     padding: 1rem 0 3rem 0;
     border-top: 1px solid #b9b9b9;
+
+    .textwidget {
+      display: flex;
+      padding: 0.5rem 0;
+
+      img{
+        display: inline-block;
+        height: 3rem;
+        margin-right: 1rem;
+      }
+
+      .links{
+        display: inline-block;
+        a{
+          margin-bottom: 0.4rem;
+          display: block;
+          color: $primaryTextColor;
+        }
+      }
+    }
   }
 
   .copyright-wrapper.container {
