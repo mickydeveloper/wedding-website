@@ -38,6 +38,12 @@ body {
     font-weight: 400;
   }
 
+  h1{
+    @include respond-to(extra-small){
+      font-size: 1.8rem;
+    }
+  }
+
   &.home header.top-header {
     position: absolute;
     width: 100%;
@@ -50,7 +56,7 @@ body {
     &.top-header {
       background: transparent;
       .company-logo img {
-        width: 11rem;
+        width: 10rem;
       }
 
       .desktop-primary-menu ul li, .desktop-secondary-menu ul li {
@@ -73,6 +79,10 @@ body {
         font-size: 3rem;
         color: $primaryTextColor;
         font-family: "Sacramento";
+
+        @include respond-to(extra-small){
+          font-size: 2.2rem;
+        }
       }
 
       .person {
@@ -90,6 +100,10 @@ body {
           font-family: Sacramento;
           font-size: 3rem;
           font-weight: 400;
+
+          @include respond-to(extra-small){
+            font-size: 2.4rem;
+          }
         }
       }
 
@@ -113,32 +127,37 @@ body {
       }
 
       img.wed-logo {
-        margin: auto;
-        margin-top: 10vh;
+        margin: 15vh auto;
       }
     }
 
     .btn {
       display: inline-flex;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       color: $primaryColor-1;
       font-weight: 600;
       font-size: 0.9rem;
       background: $primaryColor-2;
       border:1px solid $primaryColor-2;
-      padding: 0.8rem 3rem;
+      padding: 0.7rem 3rem;
       transition: 0.4s all ease-in-out;
 
       &:hover{
         text-decoration: none;
-        background: $primaryColor-2;
+        background: $primaryTextColor;
       }
     }
   }
 
   footer.container {
-    padding: 1rem 0 3rem 0;
+    padding: 2rem 0 3rem 0;
     border-top: 1px solid #b9b9b9;
+
+    h2.widget-title {
+      color: $secondaryColor;
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
 
     .textwidget {
       display: flex;
@@ -146,7 +165,7 @@ body {
 
       img{
         display: inline-block;
-        height: 3rem;
+        height: 2.5rem;
         margin-right: 1rem;
       }
 
@@ -159,6 +178,12 @@ body {
         }
       }
     }
+
+    @include respond-to(medium-up){
+      div.widget {
+        margin-left: -15px;
+      }
+    }
   }
 
   .copyright-wrapper.container {
@@ -166,7 +191,7 @@ body {
     background: transparent;
     color: $primaryTextColor;
     > * div {
-      opacity: 0.5;
+      opacity: 0.6;
     }
   }
 }
