@@ -34,7 +34,8 @@ body {
   h1.decor{
     font-family: Sacramento;
     color: $primaryTextColor;
-    font-size: 2.8rem;
+    font-size: 3rem;
+    font-weight: 400;
   }
 
   &.home header.top-header {
@@ -80,14 +81,15 @@ body {
       }
 
       &.parallax {
-        background-size: cover;
         color: white;
-        background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/scala_postriore_villa-dark.jpg) fixed;
+        background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/scala_postriore_villa-dark.jpg) no-repeat fixed;
+        background-size: cover;
 
         h1 {
           color: white;
           font-family: Sacramento;
-          font-size: 2.5rem;
+          font-size: 3rem;
+          font-weight: 400;
         }
       }
 
@@ -119,12 +121,11 @@ body {
       font-size: 0.9rem;
       background: $primaryColor-2;
       border:1px solid $primaryColor-2;
-      padding: 0.9rem 3rem;
+      padding: 0.8rem 3rem;
       transition: 0.4s all ease-in-out;
 
       &:hover{
-        color: $primaryColor-2;
-        background: transparent;
+        text-decoration: none;
       }
     }
   }
