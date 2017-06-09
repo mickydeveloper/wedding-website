@@ -1,0 +1,20 @@
+# Ignore temp files
+*~
+
+# Mac file
+.DS_Store
+
+# Ignore all builddef.lst files.
+builddef.lst
+
+# Ignore setting directory
+.settings
+
+# Ignore OpenOffice document backups
+*#
+
+# Ignore .idea directory
+.idea
+
+# Ignore NPM stuff
+/node_modules
