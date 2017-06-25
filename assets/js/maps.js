@@ -19,7 +19,7 @@ function initMapChurch() {
     });
     var marker = new google.maps.Marker({
         position: {lat: 45.39828, lng: 11.94314},
-        icon: 'https://i0.wp.com/wp-blog-dir.s3.amazonaws.com/uploads/sites/5/2016/05/fav2.png',
+        icon: 'https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/church.png',
         map: mapChurch
     });
 }
@@ -34,7 +34,7 @@ function initMapVilla() {
     });
     var marker = new google.maps.Marker({
         position: {lat: 45.1532333, lng: 11.7193155},
-        icon: 'https://i0.wp.com/wp-blog-dir.s3.amazonaws.com/uploads/sites/5/2016/05/fav2.png',
+        icon: 'https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/disneyland-castle.png',
         map: mapVilla
     });
 
