@@ -186,22 +186,23 @@ body {
     }
 
     #mapChurch,#mapVilla{
-      height: 23rem;
+      height: 20rem;
       width: 100%;
     }
 
     .loc {
-      padding: 0.5rem;
+      padding: 0.5rem 0;
       font-size: 1.2rem;
+      margin-top: 1rem;
 
       img{
         height: 2.5rem;
-        margin-right: 1rem;
         width: auto;
       }
 
       span.img-wrapper {
-        width: 5rem;
+        width: 4rem;
+        display: inline-block;
         text-align: center;
       }
     }
