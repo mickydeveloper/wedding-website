@@ -4,12 +4,8 @@
         <div class="container">
             <div class="banner story"></div>
             <section>
-                <div class="row">
                     <div class="content-wrapper col-xs-12">
-                        <div class="heading">
-                            <?= the_archive_title('<h1 class="page-title underline">', '</h1>');
-                            the_archive_description('<div class="taxonomy-description">', '</div>'); ?>
-                        </div>
+                        <div class="row">
                         <?php
                         // Start the Loop.
                         while (have_posts()) : the_post();
