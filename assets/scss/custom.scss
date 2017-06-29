@@ -44,6 +44,13 @@ body {
     }
   }
 
+  @include respond-to(extra-small){
+    .second{
+      order: 2;
+    }
+  }
+
+
   &.home header.top-header {
     position: absolute;
     width: 100%;
@@ -86,11 +93,26 @@ body {
         }
       }
     }
+
+    .hamburger-wrap .hamburger>div {
+      color: $primaryTextColor;
+    }
+
+    .mobile-side-nav {
+      background: linear-gradient(45deg,#ffffff 0%,rgba(255, 255, 255, 0.95) 100%);
+      .mobile-side-nav-container .mobile-side-nav-menu li a {
+        color: $primaryTextColor;
+      }
+    }
   }
 
   main {
     section {
       padding: 5rem 0;
+
+      &.top{
+        padding-bottom: 0;
+      }
 
       .quotation {
         font-size: 3rem;
@@ -172,6 +194,14 @@ body {
       align-items: flex-end;
       padding: 1rem;
 
+      @include respond-to(extra-small){
+        height: 30vh;
+
+        h1 {
+          font-size: 2.4rem;
+        }
+      }
+
       h1 {
         color: white;
         font-family: Sacramento;
@@ -193,15 +223,19 @@ body {
     #mapChurch,#mapVilla{
       height: 20rem;
       width: 100%;
+
+      @include respond-to(extra-small){
+
+      }
     }
 
     .loc {
       padding: 0.5rem 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-top: 1rem;
 
       img{
-        height: 2.5rem;
+        height: 2rem;
         width: auto;
       }
 
