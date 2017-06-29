@@ -111,7 +111,7 @@ body {
 
   main {
     section {
-      padding: 5rem 0;
+      padding: 4rem 0;
 
       &.top{
         padding-bottom: 0;
@@ -222,6 +222,7 @@ body {
 
       @include respond-to(extra-small){
         height: 30vh;
+        margin: 0 -15px;
 
         h1 {
           font-size: 2.4rem;
