@@ -95,7 +95,7 @@ body {
     }
 
     .hamburger-wrap .hamburger>div {
-      color: $primaryTextColor;
+      background: $primaryTextColor;
     }
 
     .mobile-side-nav {
@@ -194,19 +194,19 @@ body {
       align-items: flex-end;
       padding: 1rem;
 
+      h1 {
+        color: white;
+        font-family: Sacramento;
+        font-size: 3rem;
+        font-weight: 400;
+      }
+
       @include respond-to(extra-small){
         height: 30vh;
 
         h1 {
           font-size: 2.4rem;
         }
-      }
-
-      h1 {
-        color: white;
-        font-family: Sacramento;
-        font-size: 3rem;
-        font-weight: 400;
       }
 
       &.info {
@@ -225,7 +225,8 @@ body {
       width: 100%;
 
       @include respond-to(extra-small){
-
+        height: 15rem;
+        margin-bottom: 1rem;
       }
     }
 
@@ -243,6 +244,25 @@ body {
         width: 4rem;
         display: inline-block;
         text-align: center;
+      }
+    }
+
+    .form{
+      input,select,textarea{
+        padding: 0.4rem;
+        width: 100%;
+      }
+
+      input.pushbutton-wide {
+        padding: 0.4rem 1rem;
+        background: $primaryColor-2;
+        border: 1px solid $primaryColor-2;
+        color: white;
+        transition: all 0.4s ease-in-out;
+
+        &:hover,&:active,&:focus{
+          background: $primaryTextColor;
+        }
       }
     }
   }
