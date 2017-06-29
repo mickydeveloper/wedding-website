@@ -1,7 +1,7 @@
 <?php foreach ($posts as $post) : setup_postdata($post);
 
     ?>
-    <div class="col-xs-12 cold-md-4">
+    <div class="col-xs-12 col-md-4">
         <div class="post">
             <h1><?= $post->post_title; ?>
             </h1>

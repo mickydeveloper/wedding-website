@@ -135,7 +135,7 @@ body {
       &.parallax {
         color: white;
         background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/scala_postriore_villa-dark.jpg) no-repeat;
-        background-size: cover;
+        background-size: cover!important;
 
         &.story{
           background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/Porziuncola.jpg) no-repeat;
@@ -301,6 +301,7 @@ body {
       margin: 3rem auto -1rem auto;
       font-weight: 700;
       font-size: 0.8rem;
+      display: block;
     }
 
     .post{
@@ -309,6 +310,7 @@ body {
       padding: 1.5rem;
       text-align: center;
       min-height: 14rem;
+      margin-bottom: 2rem;
 
       h1{
         font-family: "Josefin Slab";
