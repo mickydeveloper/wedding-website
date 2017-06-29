@@ -308,6 +308,18 @@ body {
       border-radius: 3px;
       padding: 1.5rem;
       text-align: center;
+      min-height: 14rem;
+
+      h1{
+        font-family: "Josefin Slab";
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $primaryColor-2;
+      }
+
+      p{
+        color: $primaryTextColor;
+      }
     }
   }
 

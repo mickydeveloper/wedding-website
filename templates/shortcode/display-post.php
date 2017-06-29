@@ -3,9 +3,9 @@
     ?>
     <div class="col-xs-12 cold-md-4">
         <div class="post">
-            <h1><a href="<?= get_post_permalink($post->ID); ?>"><?= $post->post_title; ?></a>
+            <h1><?= $post->post_title; ?>
             </h1>
-            <p><?= substr(get_the_excerpt(), 0, 65); ?>...
+            <p><?= substr(get_the_excerpt(), 0, 200); ?>...
             </p>
             <a class="btn" href="<?= get_post_permalink($post->ID); ?>">READ MORE</a>
         </div>

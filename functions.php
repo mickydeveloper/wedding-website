@@ -23,6 +23,6 @@ spl_autoload_register(function ($class) {
     require $file;
 });
 
-define('FEDERICO_NICOLE_VERSION', '1.0.29');
+define('FEDERICO_NICOLE_VERSION', '1.0.30');
 
 new \NuvoPoint\Themes\FedericoNicole\Init();
