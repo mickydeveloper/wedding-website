@@ -20,7 +20,7 @@ $post_id = get_the_ID(); ?>
                     <?php
                     echo '<div class="right-sidebar col-xs-12 col-md-4">';
                     $cat = get_the_category();
-                    echo '<h2 class="underline">Read other stories</h2>';
+                    echo '<h1 class="decor">Read other stories</h1>';
                     $args = array(
                         'posts_per_page' => 6,
                         'post_type' => 'post',
@@ -37,10 +37,10 @@ $post_id = get_the_ID(); ?>
                             if ($post_id !== get_the_ID()):
                                 ?>
                                 <div class="article">
-                                    <h3><a href="<?= get_post_permalink(get_the_ID()); ?>"><?= get_the_title(); ?></a>
-                                    </h3>
+                                    <h2><a href="<?= get_post_permalink(get_the_ID()); ?>"><?= get_the_title(); ?></a>
+                                    </h2>
                                     <p><?= wp_trim_words(get_the_content(), 9); ?></p>
-                                    <a class="post-link" href="<?= get_post_permalink(get_the_ID()); ?>">Læs mere</a>
+                                    <a class="post-link" href="<?= get_post_permalink(get_the_ID()); ?>">Read more</a>
                                 </div>
                                 <?php
                             endif;

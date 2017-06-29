@@ -34,7 +34,7 @@ body {
   h1.decor {
     font-family: Sacramento;
     color: $primaryTextColor;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 400;
   }
 
@@ -49,7 +49,6 @@ body {
       order: 2;
     }
   }
-
 
   &.home header.top-header {
     position: absolute;
@@ -228,6 +227,10 @@ body {
         background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/gift-1.jpg) no-repeat;
         background-size: cover;
       }
+    }
+
+    .archive-post {
+      margin-bottom: 3rem;
     }
 
     #mapChurch,#mapVilla{
