@@ -86,6 +86,10 @@ body {
           font-size: 1.81rem;
           font-family: "Sacramento";
 
+          &.current-menu-item a {
+            border-bottom: 3px solid $primaryColor-2;
+          }
+
           a {
             color: $primaryTextColor;
           }
@@ -130,8 +134,16 @@ body {
 
       &.parallax {
         color: white;
-        background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/scala_postriore_villa-dark.jpg) no-repeat fixed;
+        background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/scala_postriore_villa-dark.jpg) no-repeat;
         background-size: cover;
+
+        &.story{
+          background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/Porziuncola.jpg) no-repeat;
+        }
+
+        @include respond-to(medium-up){
+          background-attachment: fixed!important;
+        }
 
         h1 {
           color: white;
@@ -283,7 +295,22 @@ body {
     .article {
       margin-bottom: 2rem;
     }
+
+    a.link {
+      color: white;
+      margin: 3rem auto -1rem auto;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+
+    .post{
+      background: $primaryColor-1;
+      border-radius: 3px;
+      padding: 1.5rem;
+      text-align: center;
+    }
   }
+
 
   footer.container {
     padding: 2rem 0 3rem 0;

@@ -2,7 +2,7 @@
 /* Used for the cases section on the home page*/
 ?>
 <div class="col-xs-12 col-md-4 archive-post">
-    <h2><?= get_the_title(); ?></h2>
+    <h1><?= get_the_title(); ?></h1>
     <?php
     $url = get_the_post_thumbnail_url($post->ID);
     if ($url) { ?>
