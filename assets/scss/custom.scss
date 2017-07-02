@@ -153,7 +153,8 @@ body {
         }
 
         &.story{
-          background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/Porziuncola.jpg) no-repeat;
+          background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/07/Porziuncola-lg.jpg) no-repeat;
+          background-position: center!important;
 
 
           h1{
@@ -207,11 +208,12 @@ body {
     }
 
     .banner {
-      height: 40vh;
+      height: 50vh;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       padding: 1rem;
+      background-position: center;
 
       h1 {
         color: white;
@@ -240,7 +242,7 @@ body {
       }
 
       &.gift{
-        background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/06/gift-1.jpg) no-repeat;
+        background: url(https://wp-blog-dir.s3.amazonaws.com/uploads/sites/31/2017/07/Eolie.jpg) no-repeat;
         background-size: cover;
       }
 
