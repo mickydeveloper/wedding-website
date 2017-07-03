@@ -207,6 +207,7 @@ body {
 
     .banner {
       height: 50vh;
+      min-height: 23rem;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -222,6 +223,7 @@ body {
 
       @include respond-to(extra-small){
         height: 30vh;
+        min-height:30vh;
         margin: 0 -15px;
 
         h1 {
