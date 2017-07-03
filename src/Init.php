@@ -13,7 +13,7 @@ class Init
     {
         wp_enqueue_style('nuvofront-custom', get_stylesheet_directory_uri() . '/assets/scss/custom.css',
             ['nuvofront-common', 'mobile-nav', 'desktop-nav', 'nuvofront-grid'], FEDERICO_NICOLE_VERSION);
-        if (is_page("Confirmation")) {
+        if (is_page("Wedding Information")) {
             wp_enqueue_script('init_maps', get_stylesheet_directory_uri() . '/assets/js/maps.js', [],
                 FEDERICO_NICOLE_VERSION, true);
             wp_enqueue_script('get_maps',
