@@ -13,8 +13,5 @@ builddef.lst
 # Ignore OpenOffice document backups
 *#
 
-# Ignore .idea directory
+# Ignore .idea directory as it is webstorm IDE
 .idea
-
-# Ignore NPM stuff
-/node_modules
